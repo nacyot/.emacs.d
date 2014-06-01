@@ -30,7 +30,9 @@
 ;;
 ;;     ;; lexical-binding: nil instead of t
 
+(require 'slime-js)
 (require 'slime)
+(require 'slime-tests)
 (require 'js2-refactor)
 (slime-setup '(slime-js slime-repl))
 
