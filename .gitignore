@@ -20,3 +20,4 @@ semanticdb/
 tramp
 url/
 user/
+*.elc
