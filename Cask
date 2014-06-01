@@ -114,7 +114,6 @@
 (depends-on "skewer-mode")
 (depends-on "slim-mode")
 (depends-on "slime")
-(depends-on "slime-helper" :git "git@github.com:quicklisp/quicklisp-slime-helper.git")
 (depends-on "slime-js" :git "git@github.com:swank-js/swank-js.git")
 (depends-on "smartparens")
 (depends-on "smartrep")
