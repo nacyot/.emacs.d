@@ -14,6 +14,20 @@
 ;;   (remove-hook 'before-save-hook 'ruby-mode-set-encoding))
 ;;(add-hook 'ruby-mode-hook 'ruby-mode-init)
 
+(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.jbuilder$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.builder$" . ruby-mode))
+
+(autoload 'run-ruby "inf-ruby"
+  "Run an inferior Ruby process")
+(autoload 'inf-ruby-keys "inf-ruby"
+  "Set local key defs for inf-ruby in ruby-mode")
+
 (defun ruby-mode-set-encoding () ())
 
 (defun my-ruby-mode-set-encoding ()

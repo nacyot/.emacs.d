@@ -14,6 +14,9 @@
   (set-selection-coding-system 'utf-8))
 (prefer-coding-system 'utf-8)
 
+;; disable autofill
+(auto-fill-mode -1)
+
 ;; arrow 
 (global-set-key (kbd "M-[ a") 'previous-line)
 (global-set-key (kbd "M-[ b") 'next-line)
@@ -31,7 +34,7 @@
 
 ;; profile
 (setq user-mail-address "propellerheaven@gmail.com")
-(setq user-full-name "nacyot")
+(setq user-full-name "nacyot(Daekwon Kim)")
 
 ;; autosave
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in
@@ -51,7 +54,6 @@
   kept-new-versions 6
   kept-old-versions 2
   version-control t)
-
 
 ;; always end a file with a newline
 (setq require-final-newline 'query)
@@ -82,11 +84,10 @@
 
 (global-set-key (kbd "C-c k") 'duplicate-current-line)
 
-;;
 (put 'upcase-region 'disabled nil)
 
 ;; electric-indent-mode
-(electric-indent-mode 1)
+(electric-indent-mode 0)
 
 (defun disable-electric-indent ()
   (set (make-local-variable 'electric-indent-functions)

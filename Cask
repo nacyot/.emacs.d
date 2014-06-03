@@ -6,10 +6,10 @@
 (depends-on "init-loader")
 
 ;; package
-(depends-on "pallet")
+;; (depends-on "pallet")
 
 ;; library
-(depends-on "ac-company" :git "git@github.com:buzztaiki/auto-complete.git")
+;; (depends-on "ac-company" :git "git@github.com:buzztaiki/auto-complete.git")
 (depends-on "ac-helm")
 (depends-on "ac-ispell")
 (depends-on "ac-js2")
