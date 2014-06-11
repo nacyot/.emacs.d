@@ -1,0 +1,16 @@
+(defun select-current-line ()
+  "Select the current line"
+  (interactive)
+  (end-of-line)
+  (set-mark (line-beginning-position))
+  (kill-region (region-beginning) (region-end))
+  (yank)
+  (other-window 1)
+  (yank)
+  (term-send-input)
+  (other-window 1)
+  (next-line 1)
+  (beginning-of-line)
+  )
+
+(global-set-key (kbd "C-c l") 'select-current-line)

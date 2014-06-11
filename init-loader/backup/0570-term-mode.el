@@ -1,0 +1,32 @@
+(add-hook 'term-mode-hook '(lambda ()
+                             (define-key term-raw-map "\C-y" 'term-paste)
+                             (define-key term-raw-map "\C-q" 'move-beginning-of-line)
+                             (define-key term-raw-map "\C-r" 'term-send-raw)
+                             (define-key term-raw-map "\C-s" 'term-send-raw)     
+                             (define-key term-raw-map "\C-f" 'forward-char)
+                             (define-key term-raw-map "\C-b" 'backward-char)     
+                             (define-key term-raw-map "\C-t" 'set-mark-command)     
+                             (define-key term-raw-map (kbd "C-c C-z") 'term-stop-subjob)
+                             (define-key term-raw-map "\C-z"
+                               (lookup-key (current-global-map) "\C-z"))))
+
+
+(setenv "LC_ALL" "C")
+(defvar multi-term-cursor-point)
+(setq multi-term-program shell-file-name)
+(defun toggle-term-view () (interactive)
+    (cond ((eq major-mode 'term-mode) 
+                 (fundamental-mode) 
+                 (view-mode-enable)
+                 (local-set-key (kbd "C-v C-v") 'toggle-term-view)
+                 (setq multi-term-cursor-point (point)))
+                ((eq major-mode 'fundamental-mode) 
+                 (view-mode-disable)
+                 (goto-char multi-term-cursor-point)
+                 (multi-term-internal))))
+
+
+(set-language-environment  'utf-8)
+(prefer-coding-system 'utf-8)
+(setq file-name-coding-system 'utf-8)
+(setq locale-coding-system 'utf-8)

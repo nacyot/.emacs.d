@@ -1,0 +1,12 @@
+#name : Meta Data
+#contributor: Daekwon Kim <propellerheaven@gmali.com>
+# --
+---
+title: ${1:Title}
+category: 
+plang:
+description:
+tags:
+related_keywords:
+---
+$0

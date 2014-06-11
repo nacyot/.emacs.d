@@ -134,3 +134,4 @@
 (depends-on "yasnippet")
 (depends-on "yaxception")
 (depends-on "zencoding-mode")
+;; (depends-on "multi-term")

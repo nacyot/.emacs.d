@@ -16,6 +16,8 @@
 
 ;; disable autofill
 (auto-fill-mode -1)
+(turn-off-auto-fill)
+
 
 ;; arrow 
 (global-set-key (kbd "M-[ a") 'previous-line)
@@ -33,7 +35,7 @@
 (setq standard-indent 2)
 
 ;; profile
-(setq user-mail-address "propellerheaven@gmail.com")
+(setq user-mail-address "propellerheaven(turn-off-auto-fill)@gmail.com")
 (setq user-full-name "nacyot(Daekwon Kim)")
 
 ;; autosave

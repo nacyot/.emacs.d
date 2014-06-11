@@ -6,10 +6,11 @@
 ;; ;;(defconst +snippets-dir+ (concat +emacs-lib-dir+
 ;; ;;"/yasnippet/snippets"))
 
-;; ;;(yas/load-directory +snippets-dir+)
-;; ;;(setq yas/snippet-dirs '(+snippets-dir+))
-
 (yas/global-mode 1)
+
+(setq yas/snippet-dirs '("~/.emacs.d/libs/yasnippet"))
+(yas/load-directory "~/.emacs.d/libs/yasnippet")
+(turn-off-auto-fill)
 
 (eval-after-load 'js2-mode
   '(progn

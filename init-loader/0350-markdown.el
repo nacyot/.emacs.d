@@ -10,9 +10,11 @@
 
 (add-hook 'markdown-mode-hook
           (lambda ()
-            (setq fill-column 100)
             (visual-line-mode)
             (whitespace-mode)
+            (auto-fill-mode -1)
             ))
+
+
 
 
