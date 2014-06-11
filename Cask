@@ -76,6 +76,7 @@
 (depends-on "less-css-mode")
 (depends-on "log4e")
 (depends-on "magit")
+(depends-on "magit-gitflow")
 (depends-on "markdown-mode")
 (depends-on "markdown-mode+")
 (depends-on "multiple-cursors")
