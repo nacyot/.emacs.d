@@ -16,7 +16,9 @@
 (depends-on "ac-slime")
 (depends-on "ag")
 (depends-on "angular-snippets")
-(depends-on "archives")
+;; (depends-on "archives")
+
+
 (depends-on "auto-complete")
 (depends-on "clojure-mode")
 (depends-on "coffee-mode")

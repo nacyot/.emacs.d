@@ -20,4 +20,4 @@
 ;; (defun load-lib-file (f) (load-file (concat +emacs-lib-dir+ "/" f)))
 ;; (defun load-profile (p) (load-file (concat +emacs-profiles-dir+ "/" p ".el")))
 
-    
+(require 'ox-reveal)    

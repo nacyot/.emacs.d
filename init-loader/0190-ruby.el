@@ -35,3 +35,4 @@
   (ruby-mode-set-encoding))
 (define-key ruby-mode-map "\C-ce" 'my-ruby-mode-set-encoding)
 
+(setq ruby-deep-indent-paren-style nil)
